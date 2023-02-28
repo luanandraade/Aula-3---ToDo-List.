@@ -47,7 +47,7 @@ namespace TODO.LIST
         {
             if (txtTarefa.Text == "")
             { 
-                MessageBox.Show("Erro");
+                MessageBox.Show("Tarega vazia!!");
             }
             else
             {
@@ -58,9 +58,9 @@ namespace TODO.LIST
 
         private void btnRemover_Click(object sender, EventArgs e)
         {
-            if (txtTarefa.Text == "")
+            if (listBox1.SelectedItem == null)
             {
-                MessageBox.Show("Erro");
+                MessageBox.Show("Não há item selecionado!");
             }
             else
             {
